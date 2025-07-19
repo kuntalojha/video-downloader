@@ -2,8 +2,10 @@ import React from 'react';
 
 const Download = () => {
   return (
-    <div className="h-screen" id="download">
-      <h1>Download</h1>
+    <div className="h-screen pt-25" id="download">
+      <div className="">
+        <h1>Downlode</h1>
+      </div>
     </div>
   );
 };
