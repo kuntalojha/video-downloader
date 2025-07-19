@@ -2,12 +2,22 @@ import React from 'react';
 import HeroSection from '../components/HeroSection';
 
 const Home = () => {
-  const [time, setTime] = React.useState(new Date().toLocaleTimeString());
+  const [time, setTime] = React.useState(
+    new Date().toLocaleString('en-IN', {
+      dateStyle: 'full',
+      timeStyle: 'medium',
+    })
+  );
+
   React.useEffect(() => {
-    const interval = setInterval(
-      () => setTime(new Date().toLocaleTimeString()),
-      1000
-    );
+    const interval = setInterval(() => {
+      setTime(
+        new Date().toLocaleString('en-IN', {
+          dateStyle: 'full',
+          timeStyle: 'medium',
+        })
+      );
+    }, 1000);
     return () => clearInterval(interval);
   }, []);
 

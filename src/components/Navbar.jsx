@@ -13,7 +13,7 @@ const Navbar = () => {
       </div>
       <div className="flex gap-4">
         <Link to={'/'}>Home</Link>
-        <Link to={'https://kuntalojha.github.io/MRKUNTALOJHA/'}>About Me</Link>
+        <Link to={'/'}>About</Link>
       </div>
       <div>
         <Link to={'https://github.com/kuntalojha'} target="_blank">
