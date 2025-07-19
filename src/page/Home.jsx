@@ -1,5 +1,7 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection';
+import Download from '../components/Download';
+import About from '../components/About';
 
 const Home = () => {
   const [time, setTime] = React.useState(
@@ -27,7 +29,12 @@ const Home = () => {
         <marquee>Welcome here! Today is {time}</marquee>
       </div>
       <HeroSection />
-      <div>Downlode section</div>
+      <div className="download">
+        <Download />
+      </div>
+      <div className="about">
+        <About />
+      </div>
     </div>
   );
 };

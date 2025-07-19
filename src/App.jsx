@@ -4,16 +4,33 @@ import Home from './page/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import NotFound from './page/NotFound';
+// const App = () => {
+//   return (
+//     <div>
+//       <Header />
+//       <div className="mx-4 sm:mx-[10%] h-[90vh]">
+//         <Routes>
+//           <Route path="/" element={<Home />} />
+//           <Route path="/*" element={<NotFound />} />
+//         </Routes>
+//       </div>
+//       <Footer />
+//     </div>
+//   );
+// };
+
 const App = () => {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <div className="mx-4 sm:mx-[10%] h-[90vh]">
+
+      <div className="flex-grow mx-4 sm:mx-[10%]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </div>
+
       <Footer />
     </div>
   );
